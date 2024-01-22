@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-// import Logo from "../../public/images/logos/logo5.png";
+import Logo from "../../public/images/logos/logo5.png";
 import Image from "next/image";
 
 // DARK MODE
@@ -37,13 +37,13 @@ const Page = () => {
     <div className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white shadow-lg sticky  shadow-indigo-500/40  dark:bg-slate-900">
       <div>
         <a href="/">
-          {/* <Image
+          <Image
             src={Logo}
             height={100}
             width={100}
             alt="logo"
             className="rounded text-xl"
-          /> */}
+          />
         </a>
       </div>
       <button id="menu-button">

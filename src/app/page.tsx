@@ -1,17 +1,17 @@
 "use client";
-// import Hero2 from "../components/Hero2";
+import Hero from "../components/Hero";
 import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
-// import Testimonial from "@/components/Testimonial";
-// import Stats from "@/components/Stats";
-// import Article from "@/components/Article";
+import Testimonial from "@/components/Testimonial";
+import Stats from "@/components/Stats";
+import Article from "@/components/Article";
 
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
-// import Steps from "@/components/Steps";
-// import Cta from "@/components/Cta";
+import Steps from "@/components/Steps";
+import Cta from "@/components/Cta";
 
 // export const metadata: Metadata = {
 //   title: 'NayiNaukri',
@@ -23,23 +23,23 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      {/* <Hero2 /> */}
-      {/* <Steps /> */}
+      <Hero />
+      <Steps />
 
-      {/* Stats */}
+      Stats
 
-      {/* <Stats /> */}
+      <Stats />
 
       <div>
-        {/* <Article /> */}
+        <Article />
       </div>
       {/* CTA */}
-      {/* <Cta /> */}
+      <Cta />
 
       {/* Testimonial starts here*/}
-      {/* <Testimonial /> */}
+      <Testimonial />
       {/* Testimonial ends here */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
