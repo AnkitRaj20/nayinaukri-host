@@ -1,4 +1,7 @@
+import Image from 'next/image'
 import React from 'react'
+import NayiNaukri from "../../public/images/logos/NayiNaukari.png"
+
 
 const Cta = () => {
   return (
@@ -8,7 +11,13 @@ const Cta = () => {
     <div className="flex flex-col overflow-hidden rounded-lg bg-white shadow-2xl text-center sm:flex-row md:h-80">
      
       <div className="order-first h-96 w-full bg-whitesm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
-        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Andras Vas" className="h-full w-full object-cover object-center" />
+        <Image
+        // src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&q=75&fit=crop&w=1000"
+        src={NayiNaukri}
+        height={96}
+        alt='cta'
+        className="h-full w-full object-cover object-center"
+        />
       </div>
       
       <div className="flex w-full text-center items-center flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5 dark:bg-slate-800">
